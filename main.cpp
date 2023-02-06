@@ -35,6 +35,7 @@ using namespace std;
             string str_ma = "mya";
             string str_mam = "myam";
             string str_el = "ew";
+            string str_ra = "wa";
         // Now for the Code
         while (getline (filein,my_str))
         {
@@ -64,6 +65,9 @@ using namespace std;
                 }
             while((index = my_str.find("el")) != string::npos){
                 my_str.replace(index, str_el.length(), str_el);
+                }
+            while((index = my_str.find("ra")) != string::npos){
+                my_str.replace(index, str_ra.length(), str_ra);
                 }
             
         if(opfile != 0){
