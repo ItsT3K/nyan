@@ -15,10 +15,6 @@ using namespace std;
                 printf("Nyan - A UwU version of cat\n============================================\nUsage: nyan [input] [arg]\n============================================\nArguments\n-o, --output = Outputs to a ASCII Text File\n-h, --help = Displays this page\n============================================\nWritten by ItsT3K, 2023\n");
                 return 0;
             }
-            if(!strcmp(argv[arg], "--version") || !strcmp(argv[arg], "-v")){
-                printf("nyan - Version 1.1 - 2023, ItsT3K\n");
-                return 0;
-            }
         }
         if(argc != 2 && argc != 4){
             printf("Oopsies! Yuo put in the wrong awgument :c\n");
@@ -40,8 +36,7 @@ using namespace std;
             string str_mam = "myam";
             string str_el = "ew";
             string str_ra = "wa";
-            string str_la = "wa"; 
-            string str_br = "bw";
+            string str_la = "wa";
         // Now for the Code
         while (getline (filein,my_str))
         {
@@ -77,9 +72,6 @@ using namespace std;
                 }
             while((index = my_str.find("la")) != string::npos){
                 my_str.replace(index, str_la.length(), str_la);
-                }
-            while((index = my_str.find("br")) != string::npos){
-                my_str.replace(index, str_br.length(), str_br);
                 }
             
         if(opfile != 0){
